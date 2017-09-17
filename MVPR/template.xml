@@ -1,0 +1,25 @@
+<template format="4"
+		revision="1"
+		name="MVPR Screen"
+		description="Creates a new MVPR classes - Presenter, View, Activity, Router">
+ 
+	<category value="Other"/>
+ 
+	<parameter id="className"
+		name="Functionality Name"
+		type="string"
+		constraints="class|unique|nonempty"
+		default=""
+		help="The name of the functionality that requires MVP views"/>
+
+	<parameter id="rootPackageName"
+		name="Application root package name"
+		type="string"
+		constraints="class|unique|nonempty"
+		default="com.idzodev.idzodev_mvp"
+		help=""/>
+ 
+	<globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+ 
+</template>

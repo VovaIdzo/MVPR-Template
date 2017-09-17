@@ -1,0 +1,26 @@
+<template format="4"
+		revision="1"
+		name="RecyclerView Adapter"
+		description="Creates a Adapter class">
+ 
+	<category value="Other"/>
+ 
+	<parameter id="className"
+		name="Functionality Name"
+		type="string"
+		constraints="class|unique|nonempty"
+		default=""
+		help="The name of the functionality that requires MVP views"/>
+
+	<parameter id="dvoName"
+		name="DVO Class Name"
+		type="string"
+		constraints="class|unique|nonempty"
+		default=""
+		help="The name of the DVO Class"/>
+
+
+	<globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+ 
+</template>
